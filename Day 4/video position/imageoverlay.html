@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <title>image overlay</title>
+        <style type="text/css">
+            .container.img{
+                position: relative;
+                width: 300px;
+            }
+
+
+            .image{
+                display: block;
+                width: 300px;
+                height: 400px;
+                transition: 1s;
+            }
+            .overlay{
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                height: 100%;
+                opacity: 0;
+                transition: 1s;
+                background-color: black;
+                .container-img .overlay{
+                    opacity: 1;
+                }
+                .container-img:hover .image{
+                    transform: translate(400px,300px);
+                }
+            }
+            .text{
+                color: white;
+                font-size: 20px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                -webkit-transform:translate(-50px,-50px);
+                -moz-transform:translate(-50px,-50px);
+                -o-transform:translate(-50px,-50px);
+                transform:translate(-50px,-50px);
+                text-align: center;
+            }
+
+            
+        </style>
+        <body>
+            
+        </body>
+    </head>
+</html>
